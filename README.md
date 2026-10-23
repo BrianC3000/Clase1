@@ -1,5 +1,5 @@
-<img width="1906" height="1085" alt="clase11" src="https://github.com/user-attachments/assets/23a76325-e8e0-4da9-8080-8ca9a31afbd7" />
 <img width="1900" height="1085" alt="clase1" src="https://github.com/user-attachments/assets/a98660f3-d5b5-4287-8738-cd65c31c4c41" />
+<img width="1906" height="1085" alt="clase11" src="https://github.com/user-attachments/assets/23a76325-e8e0-4da9-8080-8ca9a31afbd7" />
 # Clase1
 Clase1
 Mi primera página web semántica y estilizada
