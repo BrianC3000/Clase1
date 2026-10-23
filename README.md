@@ -30,7 +30,7 @@ Página web: https://brianc3000.github.io/Clase1/
 
 Créditos del autor
 - Estudiante: [Brian Cabrera Mongelot]
-- Curso: [Nombre del curso]
+- Curso: [Diplomatura en Professional Full-Stack Developer]
 - Unidad: Módulo 1 - Unidad 1
 
 Créditos de imágenes
