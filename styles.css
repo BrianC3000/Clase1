@@ -1,0 +1,334 @@
+:root {
+    --color-principal: #208B4E;
+    --color-secundario: #ceebd7; /* para alguna secciones */
+    --color-texto: #26332B;
+    --color-fondo: #F7FAF8; /* genereal */
+    --fuente-base: Arial, Helvetica, sans-serif;
+}/* variabls */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0; /* eliminamos el margen */
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: var(--fuente-base);
+    line-height: 1.6; /* para aumentar espacios */
+}
+
+h1,
+h2,
+p {
+    margin-top: 0; /* elimino margen */
+}
+
+h1,
+h2 {
+    line-height: 1.2; /* alineacion */
+}
+
+h2 {
+    color: var(--color-principal);
+}
+/* estilo general */
+
+header {
+    background-color: white;
+    border-bottom: 1px solid #E2E8E4; /* borde chico para separar */
+}
+
+.container {
+    width: 100%; /* todo el ancho posible */
+    max-width: 1100px; /* para que el contenido no crezca indefinidi */
+    margin: 0 auto; /* centrado hori */
+    padding: 0 20px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80px;
+}
+
+.menu-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px; /* separacion */
+    width: 100%;
+}
+
+.menu-nav ul {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+} /* elimino las viñetas */
+
+.menu-nav a {
+    color: var(--color-texto);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.25s ease;
+}
+
+.menu-nav ul a:hover {
+    color: var(--color-principal);
+} /* pasa el mouse */
+
+.menu-nav > a {
+    padding: 10px 18px;
+    background-color: var(--color-principal);
+    color: white;
+    border-radius: 8px;
+    white-space: nowrap;
+}
+
+.menu-nav > a:hover {
+    background-color: #176B3B;
+}
+
+/* ==============================
+   4. BIENVENIDA
+============================== */
+
+.bienvenida {
+    padding: 90px 20px; /* armado de caja */
+    text-align: center;
+    background-color: var(--color-secundario);
+}
+
+.bienvenida h1 {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    color: var(--color-principal);
+    font-size: clamp(2rem, 5vw, 3.5rem); /* para adaptar a distintas pantallas */
+}
+
+.bienvenida p {
+    max-width: 650px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+
+/*tarjeta beneficios  */
+.nosotros {
+    padding: 50px 20px;
+}
+
+.tarjeta {
+    max-width: 700px;
+    margin: 0 auto; 
+    padding: 30px; /* contenido y borde espacio */
+    background-color: white;
+    border: 1px solid #E2E8E4; 
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(30, 70, 45, 0.06);
+}
+
+.tarjeta h2 {
+    margin-bottom: 12px;
+}
+
+.tarjeta > p {
+    color: #5B6A60;
+}
+
+.lista {
+    padding-left: 24px;
+}
+
+.lista li {
+    margin-bottom: 10px; /* espacio elementos de lista */
+}
+
+.lista li::marker { /* resalo numeros de lista */
+    color: var(--color-principal);
+    font-weight: bold;
+}
+/* imagen con texto */
+.presentacion {
+    display: flex;
+    align-items: center; /* centro todo */
+    gap: 40px; /* espa img - texto */
+    max-width: 1100px; 
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.presentacion-imagen,
+.presentacion-texto {
+    flex: 1;
+    min-width: 0;
+}
+
+.presentacion-imagen img {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 14px; /* redonde esquinas */
+    object-fit: cover; /* recorto img automa */
+}
+
+.presentacion-texto h2 {
+    font-size: 2rem;
+}
+
+.presentacion-texto p {
+    color: #526158;
+}
+
+.presentacion-texto a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 22px;
+    background-color: var(--color-principal);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.25s ease;
+}
+
+.presentacion-texto a:hover {
+    background-color: #176B3B;
+}
+/* formulario */
+.contacto {
+    padding: 60px 20px;
+    background-color: var(--color-secundario);
+}
+
+.contacto h2,
+.contacto > p {
+    max-width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 600px;
+    margin: 30px auto 0;
+    padding: 30px;
+    background-color: white;
+    border: 1px solid #E2E8E4;
+    border-radius: 14px;
+}
+
+.contacto label {
+    font-weight: 600;
+}
+
+.contacto input,
+.contacto select {
+    width: 100%;
+    min-height: 44px;
+    margin-bottom: 12px;
+    padding: 10px 12px;
+    border: 1px solid #C9D4CC;
+    border-radius: 7px;
+    background-color: white;
+    color: var(--color-texto);
+    font: inherit; /* para copiar tipografia del mismo formulario */
+}
+
+.contacto input:focus, /* para marcar el campo cando seleccionas */
+.contacto select:focus {
+    outline: 2px solid var(--color-principal);
+    outline-offset: 2px;
+}
+
+.contacto button {
+    padding: 13px 20px;
+    background-color: var(--color-principal);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+}
+
+.contacto button:hover {
+    background-color: #176B3B;
+}
+/* footer - final*/
+footer {
+    padding: 24px 20px;
+    background-color: #203D2D;
+    color: white;
+    text-align: center;
+}
+
+footer small {
+    font-size: 0.9rem;
+}
+/* para adaptar a pantallas  */
+@media (max-width: 768px) {
+    .header-content {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .menu-nav {
+        flex-direction: column; /* pasa a columna en cel */
+        gap: 15px;
+    }
+
+    .menu-nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 20px;
+    }
+
+    .bienvenida {
+        padding: 60px 20px;
+    }
+
+    .nosotros {
+        padding: 30px 15px;
+    }
+
+    .tarjeta {
+        padding: 22px;
+    }
+
+    .presentacion {
+        flex-direction: column;
+        gap: 25px;
+        padding: 35px 20px;
+    }
+
+    .presentacion-imagen,
+    .presentacion-texto {
+        width: 100%;
+    }
+
+    .presentacion-texto h2 {
+        font-size: 1.7rem;
+    }
+
+    .contacto {
+        padding: 40px 15px;
+    }
+
+    .contacto form {
+        padding: 22px;
+    }
+}

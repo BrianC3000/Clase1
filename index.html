@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es"><!-- para busqueda en español -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Consultorio Salud: atencion profesional, cercana y personalizada."> <!--metadato para SEO  -->
+    <title>Consultorio Salud</title><!-- nombre de la pestaña -->
+ <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+     <header>
+      <div class="container header-content"> <!-- agrupacion de elementos -->
+        <nav class="menu-nav" aria-label="Navegacion principal">  <!-- bloque de navegacion -->
+          <ul> 
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+         </ul> <!-- lista sin numeracion -->
+         
+       </nav>
+      </div>
+    </header><!-- encabezado -->
+    <main>
+         <section class="bienvenida" id="inicio"> 
+           <h1>Cuidamos lo más importante: vos.</h1><!-- titulo principal -->
+           <p> Brindamos atención médica integral, con un equipo profesional comprometido con tu <strong>bienestar</strong></p>
+         </section>
+         <section class="nosotros" id="nosotros"> 
+            <article class="tarjeta" id="informacion"> 
+                <h2>Comprometidos con tu salud</h2> <!-- subtitulo -->
+                <p> Profesionalismo y confianza en cada consulta</p>
+                <ol class="lista"> 
+                    <li> 
+                        <p>Atención personalizada y sin demoras</p>
+                    </li>
+                    <li> 
+                        <p>Profesionales capacitados en diversas especialidades</p>
+                    </li>
+                    <li> 
+                        <p>Tecnología y equipamiento de última generación.</p>
+                    </li>
+                </ol><!-- lista ordenada -->
+            </article><!-- agrupacion independiente  -->
+         </section>
+         <section class="presentacion" id="servicios"> <!-- imagen -->
+            <div class="presentacion-imagen"> <img src="Img/kinesiologo.jpg" alt="medico kinesiologo salud">
+            </div>
+            <div class="presentacion-texto">
+                <h2>Un espacio para cuidar de vos</h2><!-- texto para igm -->
+                <p>Te ofrecemos atención personalizada y acompañamiento
+                   profesional para cuidar tu salud y mejorar tu bienestar.</p>
+                <a href="#contacto">Solicitar turno</a>
+            </div>
+         </section>
+         <section class="contacto" id="contacto"> <!-- formulario -->
+           <h2>Completá tus datos y elegi el tipo de consulta.</h2>
+           <form action="#">
+             <label for="nombre">Nombre completo</label> 
+             <input type="text" id="nombre" name="nombre" required>
+
+             <label for="email"> Correo electrónico</label>
+             <input type="email" id="email" name="email" required>
+
+             <label for="consulta">Tipo de consulta</label>
+             <select name="consulta" id="consulta">
+                 <option value="clinica médica">Clínica médica</option>
+                 <option value="kinesiologia">Kinesiología</option>
+                 <option value="nutricion">Nutrición</option>
+             </select>
+             <button type="submit">Enviar solicitud</button>
+            
+             </form>
+         </section>
+    </main>
+<footer> 
+    <small>Desarrollado por Brian Cabrera . 2026</small>
+</footer>
+
+
+</body>
+</html>
